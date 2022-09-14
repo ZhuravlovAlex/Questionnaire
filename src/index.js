@@ -13,7 +13,6 @@ class Formes extends React.Component {
 				<MultiLine></MultiLine>
 				<Btns></Btns>
 			</div>
-      
     );
   }
 }
@@ -44,10 +43,12 @@ class MultiLine extends React.Component {
   render() {
     return (
 			<div>
-				<textarea rows={7}>О себе</textarea>
-				<textarea rows={7}>Стек технологий</textarea>
+				<label for="about_form">About yourself</label>
+				<textarea rows={7} id="about_form" placeholder='About Yourself'></textarea>
+
+				<label for="stack_form">Technology stack</label>
+				<textarea rows={7} id="stack_form" placeholder='Technology Stack'></textarea>
 			</div>
-      
     );
   }
 }
