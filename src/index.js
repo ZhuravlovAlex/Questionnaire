@@ -7,8 +7,8 @@ console.log('Hello')
 class Formes extends React.Component {
   render() {
     return (
-			<div>
-				<h1>Questionnaire</h1>
+			<div className='main'>
+				<h1 className='title'>Questionnaire</h1>
 				<SingleLine></SingleLine>
 				<MultiLine></MultiLine>
 				<Btns></Btns>
@@ -20,7 +20,7 @@ class Formes extends React.Component {
 class SingleLine extends React.Component {
   render() {
     return (
-			<div>
+			<div className='single'>
 				<label for="name_form">Name</label>
 				<textarea rows={1} id="name_form" placeholder='Enter Name'></textarea>
 
@@ -42,12 +42,12 @@ class SingleLine extends React.Component {
 class MultiLine extends React.Component {
   render() {
     return (
-			<div>
+			<div className='multi'>
 				<label for="about_form">About yourself</label>
-				<textarea rows={7} id="about_form" placeholder='About Yourself'></textarea>
+				<textarea rows={7} id="about_form" placeholder='Enter Info About Yourself'></textarea>
 
 				<label for="stack_form">Technology stack</label>
-				<textarea rows={7} id="stack_form" placeholder='Technology Stack'></textarea>
+				<textarea rows={7} id="stack_form" placeholder='Enter Your Technology Stack'></textarea>
 			</div>
     );
   }
